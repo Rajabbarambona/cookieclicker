@@ -5,43 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Cookie Clicker</title>
+    <link rel="icon" href="cookieicon.ico" type="image/png" />
+    
 </head>
 
 <body>
-     <h1> Cookie Clicker</h1>
-    <div>
-        <p>Counter <span id="zero"></span></p>
-        <p> <span id="displaycount"></span>  </p>
-    </div>
-
-   <!--  <button type="button" id="initializ">Initialization est à 0 </button>-->
-   <button id="initializ"><img src="image1.jpg"></button>
+    <h1> Cookie Cliker </h1>
+    <marquee scrollamount="40" direction="right" behavior="alternate">
+         <img src="cookieimage.png" id="increase" alt="cookie" style="cursor:pointer"  > 
+    </marquee>
     <div class="container">
-        <section class="explain">
-            <p>le bouton du compteur, une fois cliqué, doit incrémenter le compteur et le label initialisé à 0.</p>
+        <h1>Counter</h1>
+        <!--The counter is set to zero by default-->
+        <section>
+            <label id="counter">0</label>
+
         </section>
-        <section class="material">
-            <div id="actions" class="actions">
-                <button type="button" id="run">start button</button>
-                <button type="button" id="multiply">Multiply </button>
-                <button type="button" id="purchase">Purchase Multiply </button>
-            </div>
-        </section>
-        <div id="label"></div>
+        <label id="message"></label>
+        <div class="btn-container">
+         <!--   <button id="increase" class="btn">Increase button</button>-->
+            <button id="decrease" class="btn ">decrease button</button>
+            <button id="reset" class="btn " id="reset">Reset button</button>
+            <span id="multi" class="btn multiplier">The next Cost should be x<span id="multiplierPrice"></span>
+
+        </div>
     </div>
-
     <script src="main.js"></script>
-</body>
+    
+    <br>
+    <footer>
 
-</html>
-
-
-
-
-
-
+        <p>Author: "Rajab,Poorani&Mitsu @example.com"></p>
+        
+      </footer>
 </body>
 
 </html>
