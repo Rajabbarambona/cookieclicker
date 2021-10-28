@@ -5,41 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Cookie Clicker</title>
-    <link rel="icon" href="cookieicon.ico" type="image/png" />
-    
 </head>
 
 <body>
-    <h1> Cookie Cliker </h1>
-    <marquee scrollamount="40" direction="right" behavior="alternate">
-         <img src="cookieimage.png" id="increase" alt="cookie" style="cursor:pointer"  > 
-    </marquee>
-    <div class="container">
-        <h1>Counter</h1>
+    <div class="cookieGame" id="cook">Cookie Clicker</div>
+
+     <marquee scrollamount="30" direction="right" behavior="alternate">
+        <img src="cookieimage.png" id="increase" alt="cookie" style="cursor:pointer"> 
+   </marquee>
+        <div class="container">
+      
+        
+         <!-- <h1>Cookie Clicker Game</h1> -->
+        <h2>Counter</h2>
         <!--The counter is set to zero by default-->
         <section>
-            <label id="counter">0</label>
-
+            <h2><label id="counter">0</label></h2>
         </section>
         <label id="message"></label>
         <div class="btn-container">
          <!--   <button id="increase" class="btn">Increase button</button>-->
-            <button id="decrease" class="btn ">decrease button</button>
-            <button id="reset" class="btn " id="reset">Reset button</button>
-            <span id="multi" class="btn multiplier">The next Cost should be x<span id="multiplierPrice"></span>
-
+         <div class="popup">
+            <span class="popuptext" id="myPopup">You can't go below zero!!</span>
+          </div>
+         <button  type="button"  id="decrease">Decrease</button>
+         <button id="reset">Reset</button>
+         <button id="multi">Multiplier x<span id="multiplierPrice">0</span></button>
+         <label for="message" id="message"></label>
+         <button id="bonus">Bonus x<span id="bonusValue"></span><span id="bonusCountdown"></span></button>
         </div>
     </div>
     <script src="main.js"></script>
-    
-    <br>
-    <footer>
 
-        <p>Author: "Rajab,Poorani&Mitsu @example.com"></p>
-        
-      </footer>
+    <footer class="text-center">
+        <p>Copyright &copy; October 2021 - Rajab Barambona, Mitsu Suchak and Poorani Karunanithi. All Rights Reserved
+        </p>
+    </footer>
 </body>
-
-</html>
